@@ -4,8 +4,8 @@ La funcion del programa sera para una empresa de servicios de venta y entrega de
 
 
 ## Entidades
--Productos
--Clientes
--Repartidores
--Carrito
--Login
+- Productos
+- Clientes
+- Repartidores
+- Carrito
+- Login

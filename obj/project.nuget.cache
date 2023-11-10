@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "bj4baUEVR7IHxhyJOvbUwHH48z4vu6XjI8h4UmRsEyfNzGhWLvwoawhnxJ9lk6itIrAQyXekmv79c2csq5MDEg==",
+  "dgSpecHash": "z0/pmzs6kIP2ak1QhXrG0Cn1eBEeQxrxKXjgNgH1MVYdETxX1bxL/zOIfuLW7QdSqArjScNNVk9wMo9hlipY2A==",
   "success": true,
   "projectFilePath": "D:\\1.LEONARDO BUITRON\\ciclo_6\\Programacion 1\\ProyectoFinalProg1\\ProyectoFinalProg1.csproj",
   "expectedPackageFiles": [
@@ -79,6 +79,7 @@
     "C:\\Users\\BUITRON\\.nuget\\packages\\microsoft.entityframeworkcore.relational\\7.0.13\\microsoft.entityframeworkcore.relational.7.0.13.nupkg.sha512",
     "C:\\Users\\BUITRON\\.nuget\\packages\\microsoft.entityframeworkcore.sqlite\\7.0.13\\microsoft.entityframeworkcore.sqlite.7.0.13.nupkg.sha512",
     "C:\\Users\\BUITRON\\.nuget\\packages\\microsoft.entityframeworkcore.sqlite.core\\7.0.13\\microsoft.entityframeworkcore.sqlite.core.7.0.13.nupkg.sha512",
+    "C:\\Users\\BUITRON\\.nuget\\packages\\microsoft.entityframeworkcore.tools\\7.0.13\\microsoft.entityframeworkcore.tools.7.0.13.nupkg.sha512",
     "C:\\Users\\BUITRON\\.nuget\\packages\\microsoft.extensions.caching.abstractions\\7.0.0\\microsoft.extensions.caching.abstractions.7.0.0.nupkg.sha512",
     "C:\\Users\\BUITRON\\.nuget\\packages\\microsoft.extensions.caching.memory\\7.0.0\\microsoft.extensions.caching.memory.7.0.0.nupkg.sha512",
     "C:\\Users\\BUITRON\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\7.0.0\\microsoft.extensions.configuration.abstractions.7.0.0.nupkg.sha512",

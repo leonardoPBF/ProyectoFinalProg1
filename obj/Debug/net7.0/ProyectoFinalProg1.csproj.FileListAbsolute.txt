@@ -247,9 +247,7 @@ D:\1.LEONARDO BUITRON\ciclo_6\Programacion 1\ProyectoFinalProg1\obj\Debug\net7.0
 D:\1.LEONARDO BUITRON\ciclo_6\Programacion 1\ProyectoFinalProg1\obj\Debug\net7.0\staticwebassets.pack.json
 D:\1.LEONARDO BUITRON\ciclo_6\Programacion 1\ProyectoFinalProg1\obj\Debug\net7.0\staticwebassets.build.json
 D:\1.LEONARDO BUITRON\ciclo_6\Programacion 1\ProyectoFinalProg1\obj\Debug\net7.0\staticwebassets.development.json
-D:\1.LEONARDO BUITRON\ciclo_6\Programacion 1\ProyectoFinalProg1\obj\Debug\net7.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
 D:\1.LEONARDO BUITRON\ciclo_6\Programacion 1\ProyectoFinalProg1\obj\Debug\net7.0\scopedcss\bundle\ProyectoFinalProg1.styles.css
-D:\1.LEONARDO BUITRON\ciclo_6\Programacion 1\ProyectoFinalProg1\obj\Debug\net7.0\scopedcss\projectbundle\ProyectoFinalProg1.bundle.scp.css
 D:\1.LEONARDO BUITRON\ciclo_6\Programacion 1\ProyectoFinalProg1\obj\Debug\net7.0\ProyectoFinalProg1.csproj.CopyComplete
 D:\1.LEONARDO BUITRON\ciclo_6\Programacion 1\ProyectoFinalProg1\obj\Debug\net7.0\ProyectoFinalProg1.dll
 D:\1.LEONARDO BUITRON\ciclo_6\Programacion 1\ProyectoFinalProg1\obj\Debug\net7.0\refint\ProyectoFinalProg1.dll

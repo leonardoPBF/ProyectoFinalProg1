@@ -16,12 +16,96 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = D:\1.LEONARDO BUITRON\ciclo_6\Programacion 1\ProyectoFinalProg1
 build_property._RazorSourceGeneratorDebug = 
 
+[D:/1.LEONARDO BUITRON/ciclo_6/Programacion 1/ProyectoFinalProg1/Views/Alcalde/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWxjYWxkZVxDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/1.LEONARDO BUITRON/ciclo_6/Programacion 1/ProyectoFinalProg1/Views/Alcalde/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWxjYWxkZVxEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/1.LEONARDO BUITRON/ciclo_6/Programacion 1/ProyectoFinalProg1/Views/Alcalde/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWxjYWxkZVxEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/1.LEONARDO BUITRON/ciclo_6/Programacion 1/ProyectoFinalProg1/Views/Alcalde/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWxjYWxkZVxFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/1.LEONARDO BUITRON/ciclo_6/Programacion 1/ProyectoFinalProg1/Views/Alcalde/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWxjYWxkZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/1.LEONARDO BUITRON/ciclo_6/Programacion 1/ProyectoFinalProg1/Views/FormacionAcademica/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRm9ybWFjaW9uQWNhZGVtaWNhXENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/1.LEONARDO BUITRON/ciclo_6/Programacion 1/ProyectoFinalProg1/Views/FormacionAcademica/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRm9ybWFjaW9uQWNhZGVtaWNhXERlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/1.LEONARDO BUITRON/ciclo_6/Programacion 1/ProyectoFinalProg1/Views/FormacionAcademica/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRm9ybWFjaW9uQWNhZGVtaWNhXERldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/1.LEONARDO BUITRON/ciclo_6/Programacion 1/ProyectoFinalProg1/Views/FormacionAcademica/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRm9ybWFjaW9uQWNhZGVtaWNhXEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/1.LEONARDO BUITRON/ciclo_6/Programacion 1/ProyectoFinalProg1/Views/FormacionAcademica/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRm9ybWFjaW9uQWNhZGVtaWNhXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [D:/1.LEONARDO BUITRON/ciclo_6/Programacion 1/ProyectoFinalProg1/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
+[D:/1.LEONARDO BUITRON/ciclo_6/Programacion 1/ProyectoFinalProg1/Views/Home/Login.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxMb2dpbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [D:/1.LEONARDO BUITRON/ciclo_6/Programacion 1/ProyectoFinalProg1/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/1.LEONARDO BUITRON/ciclo_6/Programacion 1/ProyectoFinalProg1/Views/Municipalidad/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTXVuaWNpcGFsaWRhZFxDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/1.LEONARDO BUITRON/ciclo_6/Programacion 1/ProyectoFinalProg1/Views/Municipalidad/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTXVuaWNpcGFsaWRhZFxEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/1.LEONARDO BUITRON/ciclo_6/Programacion 1/ProyectoFinalProg1/Views/Municipalidad/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTXVuaWNpcGFsaWRhZFxEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/1.LEONARDO BUITRON/ciclo_6/Programacion 1/ProyectoFinalProg1/Views/Municipalidad/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTXVuaWNpcGFsaWRhZFxFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/1.LEONARDO BUITRON/ciclo_6/Programacion 1/ProyectoFinalProg1/Views/Municipalidad/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTXVuaWNpcGFsaWRhZFxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/1.LEONARDO BUITRON/ciclo_6/Programacion 1/ProyectoFinalProg1/Views/Noticias/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTm90aWNpYXNcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/1.LEONARDO BUITRON/ciclo_6/Programacion 1/ProyectoFinalProg1/Views/Noticias/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTm90aWNpYXNcRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/1.LEONARDO BUITRON/ciclo_6/Programacion 1/ProyectoFinalProg1/Views/Noticias/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTm90aWNpYXNcRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/1.LEONARDO BUITRON/ciclo_6/Programacion 1/ProyectoFinalProg1/Views/Noticias/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTm90aWNpYXNcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/1.LEONARDO BUITRON/ciclo_6/Programacion 1/ProyectoFinalProg1/Views/Noticias/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTm90aWNpYXNcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [D:/1.LEONARDO BUITRON/ciclo_6/Programacion 1/ProyectoFinalProg1/Views/Shared/Error.cshtml]
@@ -35,11 +119,3 @@ build_metadata.AdditionalFiles.CssScope =
 [D:/1.LEONARDO BUITRON/ciclo_6/Programacion 1/ProyectoFinalProg1/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
-
-[D:/1.LEONARDO BUITRON/ciclo_6/Programacion 1/ProyectoFinalProg1/Views/_ViewStart.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
-build_metadata.AdditionalFiles.CssScope = 
-
-[D:/1.LEONARDO BUITRON/ciclo_6/Programacion 1/ProyectoFinalProg1/Views/Shared/_Layout.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
-build_metadata.AdditionalFiles.CssScope = b-kphl3hx6p4

@@ -17,6 +17,29 @@ namespace ProyectoFinalProg1.Migrations
 #pragma warning disable 612, 618
             modelBuilder.HasAnnotation("ProductVersion", "7.0.13");
 
+            modelBuilder.Entity("ProyectoFinalProg1.Models.Entidades.Administrador", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("INTEGER");
+
+                    b.Property<string>("Apellidos")
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("Email")
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("Nombres")
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("contraseña")
+                        .HasColumnType("TEXT");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Administrador");
+                });
+
             modelBuilder.Entity("ProyectoFinalProg1.Models.Entidades.Alcalde", b =>
                 {
                     b.Property<int>("Id")
@@ -95,6 +118,9 @@ namespace ProyectoFinalProg1.Migrations
                     b.Property<string>("NombreMunicipalidad")
                         .HasColumnType("TEXT");
 
+                    b.Property<string>("Provincia")
+                        .HasColumnType("TEXT");
+
                     b.Property<string>("Referencia")
                         .HasColumnType("TEXT");
 
@@ -121,6 +147,29 @@ namespace ProyectoFinalProg1.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("Noticias");
+                });
+
+            modelBuilder.Entity("ProyectoFinalProg1.Models.Entidades.Usuario", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("INTEGER");
+
+                    b.Property<string>("Apellidos")
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("Email")
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("Nombres")
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("contraseña")
+                        .HasColumnType("TEXT");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Usuario");
                 });
 
             modelBuilder.Entity("ProyectoFinalProg1.Models.Entidades.Alcalde", b =>

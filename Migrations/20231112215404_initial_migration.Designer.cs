@@ -11,14 +11,37 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace ProyectoFinalProg1.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20231110234109_InitialModel")]
-    partial class InitialModel
+    [Migration("20231112215404_initial_migration")]
+    partial class initial_migration
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder.HasAnnotation("ProductVersion", "7.0.13");
+
+            modelBuilder.Entity("ProyectoFinalProg1.Models.Entidades.Administrador", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("INTEGER");
+
+                    b.Property<string>("Apellidos")
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("Email")
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("Nombres")
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("contraseña")
+                        .HasColumnType("TEXT");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Administrador");
+                });
 
             modelBuilder.Entity("ProyectoFinalProg1.Models.Entidades.Alcalde", b =>
                 {
@@ -98,6 +121,9 @@ namespace ProyectoFinalProg1.Migrations
                     b.Property<string>("NombreMunicipalidad")
                         .HasColumnType("TEXT");
 
+                    b.Property<string>("Provincia")
+                        .HasColumnType("TEXT");
+
                     b.Property<string>("Referencia")
                         .HasColumnType("TEXT");
 
@@ -124,6 +150,29 @@ namespace ProyectoFinalProg1.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("Noticias");
+                });
+
+            modelBuilder.Entity("ProyectoFinalProg1.Models.Entidades.Usuario", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("INTEGER");
+
+                    b.Property<string>("Apellidos")
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("Email")
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("Nombres")
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("contraseña")
+                        .HasColumnType("TEXT");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Usuario");
                 });
 
             modelBuilder.Entity("ProyectoFinalProg1.Models.Entidades.Alcalde", b =>

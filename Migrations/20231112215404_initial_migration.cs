@@ -6,11 +6,27 @@ using Microsoft.EntityFrameworkCore.Migrations;
 namespace ProyectoFinalProg1.Migrations
 {
     /// <inheritdoc />
-    public partial class InitialModel : Migration
+    public partial class initial_migration : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
         {
+            migrationBuilder.CreateTable(
+                name: "Administrador",
+                columns: table => new
+                {
+                    Id = table.Column<int>(type: "INTEGER", nullable: false)
+                        .Annotation("Sqlite:Autoincrement", true),
+                    Nombres = table.Column<string>(type: "TEXT", nullable: true),
+                    Apellidos = table.Column<string>(type: "TEXT", nullable: true),
+                    Email = table.Column<string>(type: "TEXT", nullable: true),
+                    contraseña = table.Column<string>(type: "TEXT", nullable: true)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_Administrador", x => x.Id);
+                });
+
             migrationBuilder.CreateTable(
                 name: "Municipalidad",
                 columns: table => new
@@ -19,6 +35,7 @@ namespace ProyectoFinalProg1.Migrations
                         .Annotation("Sqlite:Autoincrement", true),
                     NombreMunicipalidad = table.Column<string>(type: "TEXT", nullable: true),
                     Departamento = table.Column<string>(type: "TEXT", nullable: true),
+                    Provincia = table.Column<string>(type: "TEXT", nullable: true),
                     Distrito = table.Column<string>(type: "TEXT", nullable: true),
                     Direccion = table.Column<string>(type: "TEXT", nullable: true),
                     Referencia = table.Column<string>(type: "TEXT", nullable: true),
@@ -41,6 +58,22 @@ namespace ProyectoFinalProg1.Migrations
                 constraints: table =>
                 {
                     table.PrimaryKey("PK_Noticias", x => x.Id);
+                });
+
+            migrationBuilder.CreateTable(
+                name: "Usuario",
+                columns: table => new
+                {
+                    Id = table.Column<int>(type: "INTEGER", nullable: false)
+                        .Annotation("Sqlite:Autoincrement", true),
+                    Nombres = table.Column<string>(type: "TEXT", nullable: true),
+                    Apellidos = table.Column<string>(type: "TEXT", nullable: true),
+                    Email = table.Column<string>(type: "TEXT", nullable: true),
+                    contraseña = table.Column<string>(type: "TEXT", nullable: true)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_Usuario", x => x.Id);
                 });
 
             migrationBuilder.CreateTable(
@@ -104,10 +137,16 @@ namespace ProyectoFinalProg1.Migrations
         protected override void Down(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.DropTable(
+                name: "Administrador");
+
+            migrationBuilder.DropTable(
                 name: "FormacionAcademica");
 
             migrationBuilder.DropTable(
                 name: "Noticias");
+
+            migrationBuilder.DropTable(
+                name: "Usuario");
 
             migrationBuilder.DropTable(
                 name: "Alcalde");

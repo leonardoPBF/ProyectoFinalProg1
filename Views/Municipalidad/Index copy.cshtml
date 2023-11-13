@@ -1,0 +1,99 @@
+@model IEnumerable<ProyectoFinalProg1.Models.Entidades.Municipalidad>
+
+@{
+    ViewData["Title"] = "Index";
+}
+<section id="hero" class="d-flex flex-column justify-content-end align-items-center">
+
+    <div id="heroCarousel" data-bs-interval="5000" class="container carousel carousel-fade" data-bs-ride="carousel">
+
+      <!-- Slide 1 -->
+      <div class="carousel-item active" >
+        <div class="carousel-container">
+          <h2 class="animate__animated animate__fadeInDown">Bienvenido</h2>
+          
+        </div>
+      </div>    
+
+    </div>
+
+    <svg class="hero-waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 28 " preserveAspectRatio="none">
+      <defs>
+        <path id="wave-path" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z">
+      </defs>
+      <g class="wave1">
+        <use xlink:href="#wave-path" x="50" y="3" fill="rgba(255,255,255, .1)">
+      </g>
+      <g class="wave2">
+        <use xlink:href="#wave-path" x="50" y="0" fill="rgba(255,255,255, .2)">
+      </g>
+      <g class="wave3">
+        <use xlink:href="#wave-path" x="50" y="9" fill="#fff">
+      </g>
+    </svg>
+
+  </section><!-- End Hero -->
+</section>
+  
+ <p >
+    <a asp-action="Create">Create New</a>
+</p>   
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.NombreMunicipalidad)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Departamento)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Distrito)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Direccion)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Referencia)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Aceptacion)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.NombreMunicipalidad)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Departamento)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Distrito)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Direccion)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Referencia)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Aceptacion)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.Id">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.Id">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
+
+<a class="btn btn-primary"asp-area="" asp-controller="Municipalidad" asp-action="Index">Login</a>
+<a class="btn btn-primary"asp-area="" asp-controller="Noticias" asp-action="Index">Noticias</a>
+<a class="btn btn-primary"asp-area="" asp-controller="Alcalde" asp-action="Index">Alcalde</a>
+

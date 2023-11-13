@@ -5,28 +5,41 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
+using Data.Services;
 using Data;
 using ProyectoFinalProg1.Models.Entidades;
+using Microsoft.EntityFrameworkCore.Infrastructure;
 
 namespace ProyectoFinalProg1.Controllers
 {
     public class MunicipalidadController : Controller
     {
         private readonly ApplicationDbContext _context;
+         private readonly municipalidadService _context2;
 
-        public MunicipalidadController(ApplicationDbContext context)
+        public MunicipalidadController(ApplicationDbContext context, municipalidadService context2)
         {
             _context = context;
+            _context2 = context2;
         }
 
         // GET: Municipalidad
-        public async Task<IActionResult> Index()
+        public IActionResult Index()
         {
-              return _context.Municipalidad != null ? 
-                          View(await _context.Municipalidad.ToListAsync()) :
-                          Problem("Entity set 'ApplicationDbContext.Municipalidad'  is null.");
+              return View();
         }
 
+
+        [HttpPost]
+        public async Task<IActionResult> mostrarMunicipalidad(string Provincia,[Bind("Provincia")] Municipalidad municipalidad)
+        {
+           Provincia= municipalidad.Provincia; 
+            List<Municipalidad> entidadesFiltradas = await _context2.FiltrarEntidadesPorElementoAsync(Provincia);
+            ViewBag.titulo="Lista de las municipalidades provincia de: "+Provincia;         
+
+           return View(entidadesFiltradas);
+           
+        }
         // GET: Municipalidad/Details/5
         public async Task<IActionResult> Details(int? id)
         {
@@ -56,7 +69,7 @@ namespace ProyectoFinalProg1.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("Id,NombreMunicipalidad,Departamento,Distrito,Direccion,Referencia,Aceptacion")] Municipalidad municipalidad)
+        public async Task<IActionResult> Create([Bind("Id,NombreMunicipalidad,Departamento,Provincia,Distrito,Direccion,Referencia,Aceptacion")] Municipalidad municipalidad)
         {
             if (ModelState.IsValid)
             {
@@ -88,7 +101,7 @@ namespace ProyectoFinalProg1.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("Id,NombreMunicipalidad,Departamento,Distrito,Direccion,Referencia,Aceptacion")] Municipalidad municipalidad)
+        public async Task<IActionResult> Edit(int id, [Bind("Id,NombreMunicipalidad,Departamento,Distrito,Provincia,Direccion,Referencia,Aceptacion")] Municipalidad municipalidad)
         {
             if (id != municipalidad.Id)
             {
@@ -159,5 +172,8 @@ namespace ProyectoFinalProg1.Controllers
         {
           return (_context.Municipalidad?.Any(e => e.Id == id)).GetValueOrDefault();
         }
+
+        
     }
+
 }

@@ -21,5 +21,9 @@ namespace Data
         public DbSet<ProyectoFinalProg1.Models.Entidades.Alcalde> Alcalde { get; set; } = default!;
 
         public DbSet<ProyectoFinalProg1.Models.Entidades.FormacionAcademica> FormacionAcademica { get; set; } = default!;
+
+        public DbSet<ProyectoFinalProg1.Models.Entidades.Administrador> Administrador { get; set; } = default!;
+
+        public DbSet<ProyectoFinalProg1.Models.Entidades.Usuario> Usuario { get; set; } = default!;
     }
 }

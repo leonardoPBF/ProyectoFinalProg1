@@ -15,6 +15,7 @@ namespace ProyectoFinalProg1.Models.Entidades
         [DisplayName("Nombre de la municipalidad")]
         public string? NombreMunicipalidad { get; set; } 
         public string? Departamento { get; set; } 
+        public string? Provincia { get; set; } 
         public string? Distrito { get; set; } 
         public string? Direccion { get; set; }
         public string? Referencia { get; set; } 

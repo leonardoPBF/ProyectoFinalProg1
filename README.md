@@ -14,3 +14,10 @@ el nombre sera: Mi Municipalidad Arequipa -> MMAQP abreviacion
 
 - Noticias (Titulo, resumen, imagen, fecha, contenido)
 - Usuario (nombre, correo electronico, )
+
+## Funciones implementadas
+- Navegacion y disposicion de informacion municipalidades de arequipa, mostrar la aceptacion.
+- Acceso administrador
+
+posdata: hice lo que pude <3 
+

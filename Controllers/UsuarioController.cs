@@ -7,16 +7,19 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using Data;
 using ProyectoFinalProg1.Models.Entidades;
+using Data.Services;
 
 namespace ProyectoFinalProg1.Controllers
 {
     public class UsuarioController : Controller
     {
         private readonly ApplicationDbContext _context;
+        private readonly UsuarioService _usuario;
 
-        public UsuarioController(ApplicationDbContext context)
+        public UsuarioController(ApplicationDbContext context,UsuarioService usuario)
         {
             _context = context;
+            _usuario = usuario;
         }
 
         // GET: Usuario
@@ -159,5 +162,24 @@ namespace ProyectoFinalProg1.Controllers
         {
           return (_context.Usuario?.Any(e => e.Id == id)).GetValueOrDefault();
         }
+
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> ValidarUsuario([Bind("Email,contraseña")] Usuario usuario)
+        {
+            if (ModelState.IsValid)
+            {
+                Usuario logeo = await _usuario.CuentaUsuario(usuario.contraseña, usuario.Email);
+                if(logeo != null)
+                    return RedirectToAction("Index", "Administrador", usuario);     
+            }
+
+            return RedirectToAction("Login");        
+        }
+
+        public IActionResult Login()
+        {
+            return View();
+        }   
     }
 }

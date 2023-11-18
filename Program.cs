@@ -6,7 +6,10 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddDbContext<ApplicationDbContext>(options =>
     options.UseSqlite(builder.Configuration.GetConnectionString("ApplicationDbContext") ?? throw new InvalidOperationException("Connection string 'ApplicationDbContext' not found.")));
 
+//Servicios propios
 builder.Services.AddScoped<municipalidadService>();
+builder.Services.AddScoped<UsuarioService>();
+
 // Add services to the container.
 builder.Services.AddControllersWithViews();
 

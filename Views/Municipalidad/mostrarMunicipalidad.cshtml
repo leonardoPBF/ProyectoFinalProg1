@@ -2,7 +2,31 @@
 
 @{
     ViewData["Title"] = "Municipalidad";
+    var aceptacion = "";
+    var disconformidad ="";
+
 }
+
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+     <script type="text/javascript">
+    google.charts.load('current', {'packages':['corechart']});
+        google.charts.setOnLoadCallback(drawChart);
+            function drawChart() {
+
+                            var data = google.visualization.arrayToDataTable([
+                            ['conformidad', 'Hours per Day'],         
+                            ['Aceptacion', aceptacion],
+                            ['Disconformidad', disconformidad ]
+                            ]);
+
+                            var chart = new google.visualization.PieChart(document.getElementById('piechart'));
+                           
+                            chart.draw(data);
+                            
+                           
+                        }
+        </script>
+
 <section id="hero" class="d-flex flex-column justify-content-end align-items-center">
 
  <div id="heroCarousel" data-bs-interval="5000" class="container carousel carousel-fade" data-bs-ride="carousel"><h1>xd</h1></div>
@@ -25,60 +49,76 @@
   </section><!-- End Hero -->
 
 <h1 class="text-center py-5">@ViewBag.titulo</h1>
-<table class="table">
-    <thead>
-        <tr>
-            <th>
-                @Html.DisplayNameFor(model => model.NombreMunicipalidad)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Departamento)
-            </th>
-             <th>
-                @Html.DisplayNameFor(model => model.Provincia)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Distrito)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Direccion)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Referencia)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Aceptacion)
-            </th>
-            <th></th>
-        </tr>
-    </thead>
-    <tbody>
-@foreach (var item in Model) {
-        <tr>
-            <td>
-                @Html.DisplayFor(modelItem => item.NombreMunicipalidad)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Departamento)
-            </td>
-             <td>
-                @Html.DisplayFor(modelItem => item.Provincia)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Distrito)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Direccion)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Referencia)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Aceptacion)
-            </td>           
-        </tr>
-}
-    </tbody>
-</table>
+<div class="container">
+    <table class="table table-striped table-hover">
+        <thead  class="table-dark">
+            <tr>
+                <th>
+                    Nro
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.NombreMunicipalidad)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Departamento)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Provincia)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Distrito)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Direccion)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Referencia)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Aceptacion)
+                </th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+    @foreach (var item in Model) {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Id)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.NombreMunicipalidad)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Departamento)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Provincia)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Distrito)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Direccion)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Referencia)
+                </td>
+                <td>     
+                     @Html.DisplayFor(modelItem => item.Aceptacion) 
+                     <script>
+                        aceptacion = @Html.DisplayFor(modelItem => item.Aceptacion);
+                        disconformidad = 100 - aceptacion;
+                        data.addRow(['Aceptacion', aceptacion]);
+                        data.addRow(['Disconformidad', disconformidad]);
+                        var chart = new google.visualization.PieChart(document.getElementById('piechart'));
+                        </script>
+                     <div id="piechart" style="width: 300px; height: 140px;"></div>                      
+                     
+                </td>           
+            </tr>
+    }
+        </tbody>
+    </table>
 
-
+</div>

@@ -20,7 +20,7 @@ namespace ProyectoFinalProg1.Controllers
         }
 
         // GET: Administrador
-        public async Task<IActionResult> Index()
+        public async Task<IActionResult> Index(Usuario usuario)
         {
               return _context.Administrador != null ? 
                           View(await _context.Administrador.ToListAsync()) :
